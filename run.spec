@@ -5,13 +5,13 @@ block_cipher = None
 
 
 a = Analysis(['run.py'],
-             pathex=['C:\\Users\\willw\\Documents\\GitHub\\Personal\\desktop-pet'],
+             pathex=['D:\\Documents\\GitHub\\desktop-spheal'],
              binaries=[],
              datas=[
                  ('README.md', '.'),
                  ('config.xml', '.'),
                  ('icon.ico', '.'),
-                 ('src/sprites', 'src/sprites'),
+                 ('src/sprites','src/sprites'),
             ],
              hiddenimports=[],
              hookspath=[],
@@ -29,7 +29,7 @@ exe = EXE(pyz,
           a.scripts, 
           [],
           exclude_binaries=True,
-          name='DesktopPet',
+          name='DesktopSpheal',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
@@ -48,10 +48,10 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='DesktopPet')
+               name='DesktopSpheal')
 
 
 if sys.platform == 'darwin':
     app = BUNDLE(exe, 
-            name="DesktopPet",
+            name="DesktopSpheal",
             icon=None)
